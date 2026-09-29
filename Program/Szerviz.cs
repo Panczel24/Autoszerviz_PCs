@@ -38,12 +38,13 @@ namespace Program
                 }
                 else
                 {
-                    Console.WriteLine($"A {jarmu.Rendszam} szervizelése jelenleg nem szükséges ");
+                    Console.WriteLine($"A {jarmu.Rendszam} szervizelése jelenleg nem szükséges");
                 }
             }
         }
     }
 }
+
 
 
 

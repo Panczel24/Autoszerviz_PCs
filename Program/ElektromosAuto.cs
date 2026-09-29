@@ -41,15 +41,18 @@ namespace Program
                 $"{AkkumulatorSzint}% töltöttséggel");
         }
 
-       public override void Szervizel(int dij)
+
+        public override void Szervizel(int dij)
         {
-            if (dij > 100000)
+            if (dij > 100000)            
             {
-                KilometerOra -= 100000;
+                KilometerOra -= 10000;            
             }
+
             AkkumulatorSzint += 20;
-            Console.WriteLine($"A jármű szervizelése megtörtént");
+            Console.WriteLine("A jármű szervizelése megtörtént");
         }
+      
 
     }
 }

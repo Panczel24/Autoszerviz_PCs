@@ -199,5 +199,29 @@ namespace Tesztek
             Assert.That(auto.KilometerOra, Is.EqualTo(190000));
             Assert.That(auto.AkkumulatorSzint, Is.EqualTo(70));
         }
+
+
+
+
+
+
+
+
+        // -------------------------
+        // Motor tesztek
+        // -------------------------
+
+       
+        [Test]
+        public void Motor_Szervizeles_VegsebessegCSokkenes()
+        {
+            Motor motor = new Motor("MO-123", 5, 200000, 70);
+            motor.Szervizel(50000);
+            Assert.That(motor.Vegsebesseg, Is.EqualTo(290));
+        }
+        
+
+
+
     }
 }
